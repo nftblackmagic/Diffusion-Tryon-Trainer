@@ -45,7 +45,7 @@ class OOTDiffusionHDInference:
         )
 
         self.pipe = OotdPipeline.from_pretrained(
-            model_root,
+            pretrained_model_name_or_path=model_root,
             unet_garm=unet_garm,
             unet_vton=unet_vton,
             vae=vae,
@@ -73,7 +73,7 @@ class OOTDiffusionHDInference:
 
     def tokenize_captions(self, captions, max_length):
         inputs = self.tokenizer(
-            captions, max_length=max_length, padding="max_length", truncation=True, return_tensors="pt"
+            captions, max_length=self.tokenizer.model_max_length, padding="max_length", truncation=True, return_tensors="pt"
         )
         return inputs.input_ids
 
@@ -81,6 +81,7 @@ class OOTDiffusionHDInference:
     def __call__(self,
                 model_type='hd',
                 category='upperbody',
+                prompt=None,
                 image_garm=None,
                 image_vton=None,
                 mask=None,
@@ -103,7 +104,7 @@ class OOTDiffusionHDInference:
             if model_type == 'hd':
                 # Fake caption, note that teh garm's CLIP encoding is
                 # also used as a prompt in OOTDiffusion.
-                prompt_embeds = self.text_encoder(self.tokenize_captions([""] * batch_size, 2).to(self.gpu_id))[0]
+                prompt_embeds = self.text_encoder(self.tokenize_captions(prompt, 2).to(self.gpu_id))[0]
                 prompt_embeds[:, 1:] = prompt_image[:]
             elif model_type == 'dc':
                 prompt_embeds = self.text_encoder(self.tokenize_captions([category] * batch_size, 3).to(self.gpu_id))[0]

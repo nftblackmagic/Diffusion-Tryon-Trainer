@@ -76,13 +76,15 @@ def inference_per_batch(batch, model, args):
     image_ori = batch["GT"]
     # inpaint_mask = batch["inpaint_mask"]
     mask = batch["inpaint_mask"]
-    # prompt = batch["prompt"]
+    prompt = batch["prompt"]
     file_name = batch["file_name"]
+        
     gen_images = model(
         model_type=args.model_type,
         category=CATEGORY_LIST[args.category],
         image_garm=image_garm,
         image_vton=image_vton,
+        prompt=prompt,
         mask=mask,
         image_ori=image_ori,
         num_samples=args.num_samples,

@@ -298,8 +298,8 @@ class OotdPipeline(DiffusionPipeline, TextualInversionLoaderMixin, LoraLoaderMix
             mask = torch.tensor(mask)
             mask = mask / 255
             mask = mask.reshape(-1, 1, mask.size(-2), mask.size(-1))
-        elif type(mask) == torch.Tensor:
-            mask = mask.unsqueeze(dim=1)
+        # elif type(mask) == torch.Tensor:
+        #     mask = mask.unsqueeze(dim=1)
 
         # 4. set timesteps
         self.scheduler.set_timesteps(num_inference_steps, device=device)
