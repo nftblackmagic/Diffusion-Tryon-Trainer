@@ -1,0 +1,33 @@
+*.ckpt
+__pycache__/
+# .vscode/
+*.pyc
+.uuid
+
+# ignore cached files
+*.pyc
+/__pycache__/
+
+# ignore model files
+*.ckpt
+*.safetensors
+*.pt
+*.pth
+*.onnx
+*.bin
+
+# ignore bfg report files
+/..bfg-report/
+
+/controlnet/data/
+/controlnet/internal/
+/controlnet/output/
+output/
+wandb/
+internal/
+checkpoints/
+images_output/
+data/
+test_pairs_for_eval.txt
+
+OOTDiffusion/
