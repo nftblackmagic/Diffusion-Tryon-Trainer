@@ -1,4 +1,7 @@
 ## This is a unoffical training code for [OOTDiffusion](https://github.com/levihsu/OOTDiffusion)
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This repository contains the training code for the OOTDiffusion project. We extend our gratitude to the contributions of OOTDiffusion and have built upon this foundation by utilizing Huggingface's Diffusors library to implement training on the VTON dataset for virtual try-on. Our project aims to enhance the accuracy and realism of virtual try-ons through cutting-edge diffusion model technology, providing users with a more authentic try-on experience.
 
@@ -79,6 +82,20 @@ This code is only for study and research.
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/nftblackmagic"><img src="https://avatars.githubusercontent.com/u/108916776?v=4?s=100" width="100px;" alt="nftblackmagic"/><br /><sub><b>nftblackmagic</b></sub></a><br /><a href="https://github.com/nftblackmagic/Diffusion-Tryon-Trainer/commits?author=nftblackmagic" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 
