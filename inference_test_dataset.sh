@@ -7,7 +7,7 @@ python run/run_ootd_cp_dataset.py \
 --batch_size=8 \
 --resolution=512 \
 --dataroot="./data/VITON-HD" \
---test_data_list='subtest_20.txt' \
+--test_data_list='test_pairs.txt' \
 --model_root="runwayml/stable-diffusion-v1-5" \
---unet_root="./data/" \
+--unet_root="./checkpoints/" \
 --vit_dir="openai/clip-vit-large-patch14"
