@@ -75,3 +75,14 @@ sh inference_test_dataset.sh
 Our unet code is directly from [OOTDiffusion](https://github.com/levihsu/OOTDiffusion). We also thank [DCI-VTON-Virtual-Try-On](https://github.com/bcmi/DCI-VTON-Virtual-Try-On), our dataset module depends on it.
 
 This code is only for study and research.
+
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
