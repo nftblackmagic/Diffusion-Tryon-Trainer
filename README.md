@@ -1,3 +1,7 @@
+## This is a unoffical training code for [OOTDiffusion](https://github.com/levihsu/OOTDiffusion)
+
+This repository contains the training code for the OOTDiffusion project. We extend our gratitude to the contributions of OOTDiffusion and have built upon this foundation by utilizing Huggingface's Diffusors library to implement training on the VTON dataset for virtual try-on. Our project aims to enhance the accuracy and realism of virtual try-ons through cutting-edge diffusion model technology, providing users with a more authentic try-on experience.
+
 ## Some results
 
 ![Sample 1](/out_00069_00.jpg_hd_0.png)
