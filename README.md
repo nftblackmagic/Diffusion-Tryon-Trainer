@@ -7,8 +7,7 @@ This repository contains the training code for the OOTDiffusion project. We exte
 
 ## Some results
 
-![Sample 1](/out_00069_00.jpg_hd_0.png)
-![Sample 2](/out_00654_00.jpg_hd_0.png)
+![Sample 1](/demo.png)
 
 ## Install requirements
 
